@@ -1,0 +1,6 @@
+num = int (input("enter a number :\n"))
+if num % 2 == 0 :
+    print("you entered an even number")
+else:
+    print("the number entered is odd")
+
