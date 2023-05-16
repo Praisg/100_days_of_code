@@ -1,0 +1,8 @@
+
+import random
+
+names_string = input("Enter everyone's name separated by a comma\n")
+names = names_string.split(",") #split string into a list
+num_items = len(names) #get the number of items in the list
+person = names[random.randint(0,num_items-1)] # randomise from 0 up to number in the lst-1
+print(person + " is going to pay")
