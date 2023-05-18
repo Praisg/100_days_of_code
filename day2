@@ -1,3 +1,12 @@
-two_digit_number = input("Type a two digit number\n")
-sum= int(two_digit_number[0])+ int(two_digit_number[1])
-print(f"{sum}")
+#two_digit_number = input("Type a two digit number\n")
+#sum= int(two_digit_number[0])+ int(two_digit_number[1])
+#print(f"{sum}")
+def sum_digits(n):
+    """Returns the sum of the digits of a non-negative integer n."""
+    if n < 0:
+        raise ValueError("Input must be non-negative.")
+    digit_sum = 0
+    while n > 0:
+        digit_sum += n % 10
+        n //= 10
+    return digit_sum
